@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-lg-6 col-md-8 col-xl-4">
+      <p><strong>Sign In</strong></p>
+      <form #f="ngForm" (ngSubmit) = "onSubmit(f)">
+        <div class="form-group">
+          <label for="username">User Name</label>
+          <input type="text" name="username" [(ngModel)] = "mySubmittedForm.username" class="form-control" required #usrname="ngModel">
+          <span class="help-block" *ngIf="!usrname.valid && usrname.touched">Please Fill the user name</span>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" [(ngModel)] = "mySubmittedForm.password" class="form-control" required #pwd="ngModel">
+            <span class="help-block" *ngIf="!pwd.valid && pwd.touched">Please Fill the password</span>
+        </div>
+        <p *ngIf="isTrue" class="help-block">UserName or Password is not Correct</p>
+        <button class="btn btn-primary">Login</button>
+        <span class="register"><a style="cursor: pointer;" routerLink="../register">Register</a></span>
+      </form>
+    </div>
+  </div>
+</div>

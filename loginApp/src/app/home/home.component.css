@@ -1,0 +1,8 @@
+body, html {
+    height: 100%;
+    align-content: center;
+}
+.btn-success {
+    margin-left: 10px;
+}
+

@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-lg-6 col-md-8 col-xl-4">
+      <strong><p>Register</p></strong>
+      <form #f="ngForm" (ngSubmit) = "onSubmit(f)">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" class="form-control col-auto" [(ngModel)] = "myForm.fname" required #fname="ngModel">
+          <span class="help-block" *ngIf="!fname.valid && fname.touched">Please Fill the first name</span>
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" name="lname" class="form-control" [(ngModel)] = "myForm.lname">
+        </div>
+        <div class="form-group">
+            <label for="username">User Name</label>
+            <input type="text" name="uname" class="form-control" [(ngModel)] = "myForm.uname" required #uname="ngModel">
+            <span class="help-block" *ngIf="!uname.valid && uname.touched">Please Chose a User Name for you!!!</span>
+          </div>
+          <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" name="password" class="form-control" [(ngModel)] = "myForm.password" required #password="ngModel">
+              <span class="help-block" *ngIf="!password.valid && password.touched">Please Enter Your Password</span>
+            </div>
+            <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Save</button>
+            <span class="cancel"><a style="cursor: pointer;" (click)="onCancel(f)">Cancel</a></span>
+      </form>
+    </div>
+  </div>
+</div>
