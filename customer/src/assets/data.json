@@ -1,0 +1,16 @@
+[
+    {
+        "fullname": "test",
+        "address": "test",
+        "email": "rest@test.com",
+        "mobile": "9876543210",
+        "gender": "male"
+    },
+    {
+        "fullname": "test1",
+        "address": "test",
+        "email": "rest@test.com",
+        "mobile": "9876543210",
+        "gender": "male"
+    }
+]

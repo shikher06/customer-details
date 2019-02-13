@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+      <h3>Registration Form</h3>
+    <div class="col">
+      <form #f="ngForm" (ngSubmit) = "onSubmit(f)">
+        <label for="name">Name</label>
+        <input type="text" name="fullname" [(ngModel)] = "mySubmittedForm.fullname" required #fulname="ngModel">
+        <label for="mobile">Mobile</label>
+        <input type="tel" name="mobile" [(ngModel)] = "mySubmittedForm.mobile" required #mob = "ngModel">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" [(ngModel)] = "mySubmittedForm.email" required #mail = "ngModel">
+        <label for="address">Address</label>
+        <textarea name="address" id="address" cols="30" rows="5" [(ngModel)] = "mySubmittedForm.address" ></textarea>
+        <label for="gender">Gender</label>
+        <input type="radio" value="male" name="gender" [(ngModel)] = "mySubmittedForm.gender">male
+        <input type="radio" value="female" name="gender" [(ngModel)] = "mySubmittedForm.gender">female
+        <button type="submit">Save</button>
+        <span><a routerLink="/customers">Customers</a></span>
+      </form>
+    </div>
+  </div>
+</div>

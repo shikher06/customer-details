@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="navigation">
+    <ul>
+      <li><button class="registerbtn" (click) = "onRegister()">Register</button></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="card" *ngFor = "let data of savedData; let i = index">
+        <a (click) = "onClickCard(i)" style="cursor: pointer;">
+      <img src="../../assets/avatar.png" alt="avatar">
+      <div class="content">
+        <p> {{data.fullname}} </p>
+        <p> {{data.mobile}} </p>
+      </div>
+      </a>
+    </div>
+  </div>
+</div>

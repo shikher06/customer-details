@@ -1,0 +1,47 @@
+.row {
+    max-width: 100%;
+    margin: auto;
+    padding: 80px 40px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 15%;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 20px 10px;
+  margin: 10px 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.content {
+    padding: 2px 16px;
+}
+
+li {
+    float: right;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 25px;
+    max-width: 100%;
+}  
+
+.registerbtn{
+    background-color: #008CBA;
+    max-width: 100%;
+    color: #fff;
+    margin: auto;
+    padding: 10px 10px;
+}
+
+h3{
+    padding: 25px;
+    text-align: center;
+}
